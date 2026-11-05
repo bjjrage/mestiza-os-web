@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="refresh" content="5;url=https://mestiza-os-preview.vercel.app/">
+    <title>Abrir Mestiza OS</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #17233d; background: #f5f7fc; }
+      body { margin: 0; min-height: 100svh; display: grid; place-items: center; }
+      main { max-width: 32rem; margin: 1.5rem; padding: 2.5rem; background: white; border: 1px solid #dce2ef; border-radius: 1rem; }
+      h1 { margin-top: 0; font-size: 2rem; letter-spacing: -.05em; }
+      p { line-height: 1.6; }
+      a { display: inline-block; margin-top: .75rem; padding: .85rem 1.25rem; border-radius: .5rem; background: #2854f5; color: white; font-weight: 600; text-decoration: none; }
+      a:focus-visible { outline: 3px solid #17233d; outline-offset: 4px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Mestiza OS</h1>
+      <p>Te estamos llevando al sistema. Ingresá con tu cuenta de Mestiza para continuar.</p>
+      <a id="open-os" href="https://mestiza-os-preview.vercel.app/">Abrir Mestiza OS</a>
+    </main>
+    <script>
+      const target = 'https://mestiza-os-preview.vercel.app/' + window.location.hash;
+      document.getElementById('open-os').href = target;
+      window.location.replace(target);
+    </script>
+  </body>
+</html>
